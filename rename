@@ -1,0 +1,10 @@
+rename
+  -- To rename is to wrap a command to add some functionality or to modify its behaviour in someway.
+    rename OLDNAME NEWNAME
+
+    rename puts new_puts
+    puts "sk"
+    -- error => invalid command puts
+
+    new_puts "sk"
+    sk
