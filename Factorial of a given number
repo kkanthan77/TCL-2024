@@ -1,0 +1,14 @@
+# 0 1 1 2 3 5 8 13....
+
+puts " Enter a number to calculate the Factorial "
+gets stdin n
+
+set fact 1
+
+for {set i 1 } {$i <= $n} {incr i} {
+
+#	puts " Factorial of $i is             :  $fact"
+	set fact [expr {$i * $fact}]
+	
+}
+puts " Factorial of $n is : $fact"
