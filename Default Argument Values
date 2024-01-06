@@ -1,0 +1,31 @@
+# Each parameter definition in a parameter list is specified as a list of one or two elements
+# The fist element is the name of the parameter
+# The second element, if present is the default argument value to assign to the 
+  parameter if the caller doesn't supply one
+
+-- Module
+
+puts " Enter the first input "
+gets stdin arg1
+
+puts " Enter the second input"
+gets stdin arg2
+
+proc likes {arg1 {arg2 Grapes}} {
+
+	puts "I like $arg1 and $arg2\n"
+	#puts 
+}
+
+likes $arg1 $arg2
+likes "$arg1 $arg2"
+
+-----
+
+
+-- Output
+
+I like Potatoes and Oranges
+I like Potatoes Oranges and Grapes
+
+  
